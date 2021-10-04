@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  margin-right: 20px;
+  background-color: white;
+}
+.navbar__title {
+  float: left;
+  width: 60px;
+  height: 60px;
+  background-color: black;
+  color: white;
+}
+.navbar__menu {
+  float: right;
+  color: black;
+  font-size: 25px;
+}
+.navbar__menu li {
+  display: inline-block;
+  margin: 10px;
+}
+.navbar__icon {
+  float: right;
+  display: none;
+}
+
+@media (max-width: 575.98px) {
+  .navbar__icon {
+    display: block;
+  }
+  .navbar__menu {
+    display: none;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .navbar__icon {
+    display: block;
+  }
+  .navbar__menu {
+    display: none;
+  }
+}
+body {
+  margin: auto;
+}
+
+h1 {
+  padding: 10px;
+}
+
+p {
+  margin-bottom: 1.6em;
+}
+
+.principal {
+  width: 900px;
+  height: 700px;
+  position: relative;
+}
+.principal__texto {
+  width: 400px;
+  height: 600px;
+  font-size: 1.2rem;
+  line-height: 1.4em;
+  float: left;
+}
+.principal__img {
+  width: 280px;
+  height: 700px;
+  float: right;
+}
+.principal__boton {
+  float: left;
+  padding: 20px;
+  position: absolute;
+  top: 65%;
+}
+.principal__footer {
+  background-color: black;
+  color: white;
+  width: 60%;
+  float: left;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  text-align: left;
+}
+.principal__vertical {
+  color: blue;
+  font-size: 10px;
+  text-align: center;
+  float: left;
+  position: absolute;
+  bottom: 20px;
+  left: 40%;
+  transform: rotate(-90deg);
+}
+
+@media (max-width: 575.98px) {
+  .principal__img {
+    width: 100%;
+  }
+  .principal__texto {
+    width: 100%;
+    display: block;
+    z-index: 2;
+  }
+  .principal__footer {
+    width: 100%;
+    position: fixed;
+  }
+  .principal__boton {
+    display: block;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .principal__img {
+    width: 100%;
+  }
+  .principal__texto {
+    width: 100%;
+  }
+  .principal__footer {
+    width: 100%;
+    position: fixed;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

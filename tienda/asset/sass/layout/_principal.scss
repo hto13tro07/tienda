@@ -1,0 +1,105 @@
+body{
+    margin: auto;
+    
+}
+h1{
+     padding: 10px;
+ }
+ p {
+     margin-bottom: 1.6em;
+ } 
+.principal{
+    width: 900px;
+    height:  700px;
+    position: relative;
+    
+    &__texto{
+        width: 400px;
+        height: 600px;
+        font-size: 1.2rem;
+        line-height: 1.4em;
+        float: left;
+        
+       
+    }
+    &__img{
+        width: 280px;  
+        height: 700px;      
+        float: right;
+       
+        
+    }
+
+    &__boton{
+        float: left;
+        padding: 20px;
+        position: absolute;
+        top: 65%;
+    }
+
+    
+    &__footer{
+        background-color: black;
+        color: white;
+        width: 60%;
+        float: left;
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        text-align: left;
+        }
+    
+    &__vertical{
+        color: blue;
+        font-size: 10px;
+        text-align: center;
+        float: left;
+        position: absolute;
+        bottom: 20px;
+        left: 40%;
+        transform: rotate(-90deg);
+    }
+}
+// extra small
+@media (max-width: 575.98px) {
+    .principal {
+        &__img {
+            width: 100%;
+        }
+
+        &__texto{
+            width: 100%;
+            display: block;
+            z-index: 2;
+        }
+        &__footer{
+            width: 100%;
+            position: fixed;
+        }
+        &__boton{
+            display: block;
+        }
+    
+     }
+
+}
+@media (min-width: 576px) and (max-width: 767.98px){
+
+    .principal {
+
+       &__img {
+            width: 100%;
+        }
+
+        &__texto{
+            width: 100%;
+            
+        }
+        &__footer{
+            width: 100%;
+            position: fixed;
+        }
+    
+     }
+
+}
